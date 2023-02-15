@@ -1,0 +1,24 @@
+<div class="progressContainer">
+  <p class="progressText">
+    QUESTION {{ questionsList[questionsRemain - 1].questionsRemainId }} OF 3:
+  </p>
+  <div class="progressDots">
+    <span
+      *ngFor="let question of questionsList"
+      class="dot {{ questionsRemain === question.questionsRemainId ? 'selectedDot' : '' }}"
+    ></span>
+  </div>
+</div>
+<div class="questionContainer">
+  <p [@fadeInAnimation]="'in'" *ngIf="questionsRemain === 3">
+    {{
+      qtyMovies === 3 ? "Choose one of the three movies" : questionsList[0].text
+    }}
+  </p>
+  <p [@fadeInAnimation]="'in'" *ngIf="questionsRemain === 2">
+    {{ questionsList[1].text }}
+  </p>
+  <p [@fadeInAnimation]="'in'" *ngIf="questionsRemain === 1">
+    {{ questionsList[2].text }}
+  </p>
+</div>

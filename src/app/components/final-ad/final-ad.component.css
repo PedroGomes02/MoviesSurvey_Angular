@@ -1,0 +1,63 @@
+.finalAdContainer {
+  width: 80%;
+  max-width: 684px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #61d6b6;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.textTitle {
+  width: 90%;
+  padding: 38px 0;
+  margin-top: 12px;
+  color: #22daa8;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+
+.textInfo {
+  width: 90%;
+  padding-bottom: 24px;
+  color: #081f44;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 500ms ease;
+}
+
+.watchButton {
+  width: 90%;
+  padding: 24px 0;
+  margin: 0px 32px 32px 32px;
+  border-radius: 4px;
+  background: #ec5632;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: font-size 500ms ease;
+}
+.watchButton:hover {
+  background: #fe3f11;
+}
+
+@media screen and (max-width: 768px) {
+  .textTitle {
+    font-size: 24px;
+  }
+
+  .textInfo {
+    font-size: 18px;
+  }
+  .watchButton {
+    font-size: 24px;
+  }
+}

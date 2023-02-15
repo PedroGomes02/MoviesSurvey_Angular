@@ -1,0 +1,16 @@
+.messageContainer {
+  width: 80%;
+  max-width: 684px;
+  border: 10px solid #61d6b6;
+  border-radius: 10px;
+  padding: 38px;
+  background: #ffffff;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .messageContainer {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,26 @@
+.logo {
+  padding: 12px 20px;
+  margin: 40px 32px;
+  border: 2px solid rgba(199, 44, 60, 0.5);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #c72c3c;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: font-size 500ms ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 20px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,34 @@
+<div class="moviesContainer">
+  <div
+    [@fadeInAnimation]="'in'"
+    *ngFor="let movie of movies"
+    class="moviePosterContainer"
+  >
+    <div
+      *ngIf="!movie.poster_path"
+      class="moviePoster unavailablePoster"
+      (click)="handlerClick(movie.id)"
+    >
+      <p>
+        {{ movie.title }}
+        <br />
+        (Poster Unavailable)
+      </p>
+    </div>
+    <img
+      *ngIf="movie.poster_path"
+      class="moviePoster"
+      src="https://image.tmdb.org/t/p/w200/{{ movie.poster_path }}"
+      alt="{{ movie.title }}"
+      loading="lazy"
+    />
+    <img
+      *ngIf="movie.poster_path"
+      class="moviePosterOverlay"
+      (click)="handlerClick(movie.id)"
+      src="../../../assets/overlay.png"
+      alt="{{ movie.title }}"
+      loading="lazy"
+    />
+  </div>
+</div>

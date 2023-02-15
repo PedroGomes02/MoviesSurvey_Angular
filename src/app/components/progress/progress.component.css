@@ -1,0 +1,61 @@
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 8px;
+  padding: 20px 32px 24px 32px;
+  transition: all 500ms ease;
+}
+
+.progressText {
+  color: #22daa8;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 500ms ease;
+}
+
+.progressDots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dot {
+  width: 18px;
+  aspect-ratio: 1/1;
+  border: 1.5px solid #22daa8;
+  border-radius: 100%;
+  transition: background-color 1000ms ease;
+}
+
+.selectedDot {
+  background-color: #22daa8;
+  transition: background-color 1000ms ease;
+}
+
+.questionContainer {
+  padding: 0 12px;
+  color: white;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .progressContainer {
+    padding: 12px 24px 18px 24px;
+  }
+  .progressText {
+    font-size: 14px;
+  }
+  .questionContainer {
+    font-size: 24px;
+  }
+}

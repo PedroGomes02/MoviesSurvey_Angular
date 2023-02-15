@@ -1,0 +1,93 @@
+.moviesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 0 12px;
+}
+
+.moviePosterContainer {
+  display: flex;
+}
+
+.moviePoster {
+  width: 200px;
+  height: 291px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.moviePoster:hover {
+  z-index: 0;
+}
+
+.unavailablePoster {
+  background-image: url(../../../assets/overlay.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  transition: all 500ms ease;
+}
+.unavailablePoster > p {
+  color: white;
+  font-size: 16px;
+  line-height: 32px;
+}
+.unavailablePoster:hover {
+  opacity: 1;
+}
+
+.moviePosterOverlay {
+  width: 200px;
+  height: 291px;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 0;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.moviePosterOverlay:hover {
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .moviesContainer {
+    gap: 24px;
+  }
+  .moviePoster {
+    width: 150px;
+    height: 218.25px;
+  }
+  .unavailablePoster > p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .moviePosterOverlay {
+    width: 150px;
+    height: 218.25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .moviesContainer {
+    flex-direction: column;
+  }
+
+  .moviePoster {
+    width: 200px;
+    height: 291px;
+  }
+  .moviePosterOverlay {
+    width: 200px;
+    height: 291px;
+  }
+}

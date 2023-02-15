@@ -1,0 +1,23 @@
+.footerContainer {
+  display: flex;
+  gap: 32px;
+  margin: 16px;
+  margin-top: 40px;
+  opacity: 0.45;
+}
+
+.disclaimers {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width: 768px) {
+  .disclaimers {
+    font-size: 12px;
+  }
+}
